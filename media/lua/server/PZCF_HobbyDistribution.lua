@@ -22,8 +22,6 @@ local PZCF_HobbiesModNoToolsRare = {
 	"PZCF_Hobby_Flock", 0.1,
 	"PZCF_SolderingIron", 0.1,	
 	"PZCF_SolderWire", 0.1,
-	"PZCF_SolderingIron", 0.1,	
-	"PZCF_SolderWire", 0.1,	
 	"PZCF_HobbyMagazine1", 0.05,
 	"PZCF_HobbyMagazine2", 0.05,
 	"PZCF_HobbyMagazine3", 0.05,
@@ -74,6 +72,51 @@ local PZCF_HobbiesModNoToolsRare = {
 	"PZCF_BoosterPack", 0.01,
 	"PZCF_BoosterPack", 0.01,	
 	"PZCF_BoosterPack", 0.01,
+}
+
+local PZCF_HobbiesBedroomRare = {
+	"PZCF_KitAirliner", 0.001,
+	"PZCF_KitAmbulance", 0.001,
+	"PZCF_KitAPC", 0.001,
+	"PZCF_KitAttackHelicopter", 0.001,
+	"PZCF_KitBattleship", 0.001,
+	"PZCF_KitBiplane", 0.001,
+	"PZCF_KitDieselLocomotive", 0.001,	
+	"PZCF_KitElectricLocomotive", 0.001,
+	"PZCF_KitFireTruck", 0.001,
+	"PZCF_KitJetFighter", 0.001,
+	"PZCF_KitMilitaryJeep", 0.001,
+	"PZCF_KitPoliceCar", 0.001,
+	"PZCF_KitSAMLauncher", 0.001,
+	"PZCF_KitSailingShip", 0.001,
+	"PZCF_KitSchoolBus", 0.001,
+	"PZCF_KitSpaceShuttle", 0.0005,
+	"PZCF_KitSpiffoMobile", 0.0005,
+	"PZCF_KitSportsCar", 0.001,
+	"PZCF_KitSteamLocomotive", 0.001,
+	"PZCF_KitSubmarine", 0.001,
+	"PZCF_KitTankDesert", 0.001,	
+	"PZCF_KitTankGreen", 0.001,
+	"PZCF_KitTransportHelicopter", 0.001,
+	"PZCF_KitSemiTruck", 0.001,
+	"PZCF_FoodTruck_Bread", 0.001,
+	"PZCF_FoodTruck_Burger", 0.001,
+	"PZCF_FoodTruck_Chicken", 0.001,
+	"PZCF_FoodTruck_Pizza", 0.001,	
+	"PZCF_FoodTruck_Sushi", 0.001,
+	"PZCF_FoodTruck_Milk", 0.001,
+	"PZCF_FoodTruck_Fruit", 0.001,
+	"PZCF_FoodTruck_FishAndChips", 0.001,
+	"PZCF_FoodTruck_HotDog", 0.001,
+	"PZCF_FoodTruck_Donut", 0.001,
+	"PZCF_FoodTruck_StirFry", 0.001,
+	"PZCF_FoodTruck_IceCream", 0.001,		
+	"PZCF_FoodTruck_Coffee", 0.001,
+	"PZCF_FoodTruck_ShakeAndFries", 0.001,
+	"PZCF_FoodTruck_Taco", 0.001,
+	"PZCF_FoodTruck_BBQ", 0.001,
+	"PZCF_BoosterPack", 0.005,	
+	"PZCF_BoosterPack", 0.005,
 }
 
 local PZCF_HobbiesModMags = {
@@ -131,31 +174,42 @@ local PZCF_HobbiesModTGCRare = {
 }
 
 
--- Add hobby items to child wardrobe
+-- hobby items
 insertTable(ProceduralDistributions.list["WardrobeChild"].items, PZCF_HobbiesModNoToolsRare)
-
--- Add hobby items to toy store
 insertTable(ProceduralDistributions.list["GigamartToys"].items, PZCF_HobbiesModNoToolsRare)
+insertTable(ProceduralDistributions.list["CrateToys"].items, PZCF_HobbiesModNoToolsRare)
 
--- corpses
+-- all bedroom
+insertTable(ProceduralDistributions.list["BedroomSideTable"].items, PZCF_HobbiesBedroomRare)
+
+-- cards
 insertTable(SuburbsDistributions["all"]["inventorymale"].items, PZCF_HobbiesModTGCRare)
 insertTable(SuburbsDistributions["all"]["inventoryfemale"].items, PZCF_HobbiesModTGCRare)
+insertTable(VehicleDistributions["GloveBox"].items, PZCF_HobbiesModTGCRare)
+insertTable(SuburbsDistributions["all"]["counter"].items, PZCF_HobbiesModTGCRare)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModTGCRare)
 
--- post
+-- magazines
 insertTable(ProceduralDistributions.list["PostOfficeMagazines"].items, PZCF_HobbiesModMags)
-
--- bookstore
 insertTable(ProceduralDistributions.list["BookstoreBooks"].items, PZCF_HobbiesModMags)
-
--- livingroom
 insertTable(ProceduralDistributions.list["LivingRoomShelf"].items, PZCF_HobbiesModMags)
 insertTable(ProceduralDistributions.list["LivingRoomShelfNoTapes"].items, PZCF_HobbiesModMags)
-
--- daycare
 insertTable(ProceduralDistributions.list["DaycareCounter"].items, PZCF_HobbiesModMags)
 insertTable(ProceduralDistributions.list["DaycareShelves"].items, PZCF_HobbiesModMags)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModMags)
+insertTable(ProceduralDistributions.list["ShelfGeneric"].items, PZCF_HobbiesModMags)
+insertTable(SuburbsDistributions["all"]["postbox"].items, PZCF_HobbiesModMags)
+
+-- trucks
 insertTable(ProceduralDistributions.list["DaycareCounter"].items, PZCF_HobbiesModFoodTrucksRare)
 insertTable(ProceduralDistributions.list["DaycareShelves"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(ProceduralDistributions.list["DeskGeneric"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(ProceduralDistributions.list["OfficeDesk"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModFoodTrucksRare)
 
--- vehicle
-insertTable(VehicleDistributions["GloveBox"].items, PZCF_HobbiesModTGCRare)
+-- tools
+insertTable(ProceduralDistributions.list["GigamartHouseElectronics"].items, PZCF_HobbiesModSoldering)
+insertTable(ProceduralDistributions.list["GarageTools"].items, PZCF_HobbiesModSoldering)
+insertTable(ProceduralDistributions.list["CrateElectronics"].items, PZCF_HobbiesModSoldering)
+insertTable(ProceduralDistributions.list["ElectronicStoreMisc"].items, PZCF_HobbiesModSoldering)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModSoldering)
