@@ -1,0 +1,6 @@
+name=Commander's Mods - Hobbies (v1.0)
+id=PZCF_hobbies
+description=Adds various hobby related items and collectables for players to collect, build and display.
+poster=PZCF_poster_hobbies.png
+pack=PZCF_hobbies
+tiledef=PZCF_hobbies 002

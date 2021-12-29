@@ -1,0 +1,54 @@
+
+--##################################################################################
+-- Base Distribution Table Modifications
+--##################################################################################
+-- zippestore
+--insertTable(SuburbsDistributions["zippeestore"]["shelvesmag"].items, PZCF_HobbiesModMags)
+
+-- gigamart
+--insertTable(SuburbsDistributions["gigamart"]["shelvesmag"].items, PZCF_HobbiesModMags)
+
+-- bedroom
+
+insertTable(SuburbsDistributions["bedroom"]["sidetable"].items, PZCF_HobbiesModNoToolsRare)
+
+-- all
+insertTable(SuburbsDistributions["all"]["postbox"].items, PZCF_HobbiesModMags)
+insertTable(ProceduralDistributions["all"]["shelves"].items, PZCF_HobbiesModMags)
+insertTable(ProceduralDistributions["all"]["desk"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(SuburbsDistributions["all"]["counter"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModFoodTrucksRare)
+insertTable(SuburbsDistributions["all"]["sidetable"].items, PZCF_HobbiesModNoToolsRare)
+insertTable(ProceduralDistributions["all"]["shelves"].items, PZCF_HobbiesModMags)
+
+-- shed
+insertTable(ProceduralDistributions["shed"]["metal_shelves"].items, PZCF_HobbiesModMags)
+insertTable(ProceduralDistributions["shed"]["metal_shelves"].items, PZCF_HobbiesModSoldering)
+
+-- generalstore
+insertTable(SuburbsDistributions["generalstore"]["other"].items, PZCF_HobbiesModSoldering)
+
+-- generalstorestorage
+insertTable(SuburbsDistributions["generalstorestorage"]["other"].items, PZCF_HobbiesModSoldering)
+
+-- storageunit
+insertTable(SuburbsDistributions["storageunit"]["all"].items, PZCF_HobbiesModSoldering)
+insertTable(SuburbsDistributions["storageunit"]["all"].items, PZCF_HobbiesModTrains)
+
+-- garage
+insertTable(SuburbsDistributions["garage"]["metal_shelves"].items, PZCF_HobbiesModSoldering)
+insertTable(SuburbsDistributions["garage"]["metal_shelves"].items, PZCF_HobbiesModMags)
+
+-- garagestorage
+insertTable(SuburbsDistributions["garagestorage"]["other"].items, PZCF_HobbiesModSoldering)
+insertTable(SuburbsDistributions["garagestorage"]["other"].items, PZCF_HobbiesModMags)
+
+-- cornerstore
+insertTable(SuburbsDistributions["cornerstore"]["shelvesmag"].items, PZCF_HobbiesModMags)
+
+-- post
+insertTable(SuburbsDistributions["poststorage"]["all"].items, PZCF_HobbiesModMags)
+
+-- electronicsstore
+insertTable(SuburbsDistributions["electronicsstore"]["counter"].items, PZCF_HobbiesModSoldering)
+insertTable(SuburbsDistributions["electronicsstore"]["shelves"].items, PZCF_HobbiesModSoldering)
